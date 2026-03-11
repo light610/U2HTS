@@ -16,7 +16,7 @@ jobs:
     
     steps:
     - name: checkout
-      uses: actions/checkout@v4
+      uses: actions/checkout@v6
       with:
         submodules: recursive
     
@@ -38,7 +38,7 @@ jobs:
         mv build/U2HTS.uf2 U2HTS_pico2.uf2
 
     - name: Upload firmware
-      uses: actions/upload-artifact@v4
+      uses: actions/upload-artifact@v7
       with:
         name: ${{ github.event.repository.name }}_RP2-${{ github.run_id }}
         path: |
