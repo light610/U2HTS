@@ -98,6 +98,7 @@ target_link_libraries(U2HTS PUBLIC
 
 target_compile_options(U2HTS PRIVATE 
     -Wall
+    -Wno-format
 )
 
 if(PICO_PLATFORM MATCHES "rp2350")
